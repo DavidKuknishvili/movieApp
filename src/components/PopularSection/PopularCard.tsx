@@ -17,7 +17,7 @@ function PopularCard({ data }: { data: CardInterface }) {
           />
         </div>
         <div
-          className={` hidden group-hover:flex absolute  flex-col justify-end transition-all duration-1000 ease-in-out bottom-[24px] mx-[24px]`}
+          className={` hidden group-hover:hiddne absolute tablet:group-hover:flex flex-col justify-end transition-all duration-1000 ease-in-out bottom-[24px] mx-[24px]`}
         >
           <div>
             <span className="bg-[#1d1d1de0] bg-opacity-90 rounded-tl-xl rounded-br-xl px-2 py-1 text-xs md:text-sm text-teal-300">

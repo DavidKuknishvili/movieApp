@@ -18,7 +18,7 @@ function PopularComponent({ data }: { data: CardInterface[] }) {
         className={`w-full h-full object-cover transition-filter brightness-75 transition-transform duration-1000 ease-in ${blur ? 'blur-sm' : 'blur-2xl' } `}
       />
 
-      <div className="absolute w-full h-[100%] bottom-0 flex items-center justify-center pr-[25px] pl-[81px] gap-[10px]">
+      <div className="absolute w-full h-[100%] bottom-0 flex items-center justify-center pr-[25px] phone:pl-[81px] pl-[25px] gap-[10px]">
         {data?.slice(0, 6).map((card, index) => {
           const handleMouseOver: MouseEventHandler<HTMLDivElement> = () => {
             setBackimage(card.backdrop_path);
